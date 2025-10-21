@@ -194,8 +194,8 @@
 
          /* Logo styling */
          .logo-grid img {
-            width: 80px !important;
-            width: auto;
+            height: 35px; /* Uniform height across logos */
+            width: auto;  /* Preserve aspect ratio */
             filter: grayscale(100%);
             opacity: 0.7;
             transition: filter 0.3s ease, opacity 0.3s ease;
@@ -248,7 +248,7 @@
         .source-sans-3-semibold {
             font-family: "Source Sans 3", sans-serif;
             font-optical-sizing: auto;
-            font-weight: 600;
+            font-weight: 300;
             font-style: normal;
         }
 
@@ -260,7 +260,8 @@
             scrollbar-width: none;
         }
         .nav-logo {
-            height: 85px;
+            height: 40px;
+            margin: 20px;
         }
 
     </style>
@@ -270,15 +271,15 @@
     <header class="sticky top-0 z-50">
         <div class="content-container flex justify-center items-center">
             <a href="/">
-                <img class="nav-logo" src="images/trostli_logo_blue.jpg" alt="Trostli Leadership Logo" class="h-10">
+                <img class="nav-logo" src="images/tld_logo_transparent.png" alt="Trostli Leadership Logo" class="h-10">
             </a>
             </div>
     </header>
 
     <main>
         <section class="bg-gradient-to-b from-[#FAFAFA] to-white section-padding">
-            <div class="content-container text-center max-w-5xl mx-auto">
-                <h1 class="text-5xl md:text-6xl font-bold text-charcoal leading-tight mb-6 source-sans-3-semibold">Navigate Leadership Transitions with Confidence and Impact</h1>
+            <div class="content-container text-center max-w-6xl mx-auto">
+                <h1 class="text-5xl md:text-6xl text-charcoal leading-tight mb-6 source-sans-3-semibold">Navigate Leadership Transitions with Confidence and Impact</h1>
                 <p class="text-xl text-charcoal mb-8 max-w-3xl mx-auto hero-subheadline"><em>Strategic coaching</em> for accomplished leaders navigating <em>pivotal moments</em>, complex challenges, and <em>new opportunities</em>.</p>
                 <div class="flex justify-center gap-4 mb-8">
                     <a href="#contact" class="btn-primary">Book a Discovery Call</a>
@@ -287,13 +288,13 @@
                 <div class="mt-16">
                     <h3 class="text-sm tracking-widest text-gray-500 uppercase mb-6">Trusted by Leaders from Global Organizations</h3>
                     <div class="logo-grid flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
-                        <img src="images/PG.png" alt="Procter & Gamble Logo">
-                        <img src="images/reckitt_logo_MASTER_RGB.png" alt="Reckitt Logo">
-                        <img src="images/Unilever.png" alt="Unilever Logo">
-                        <img src="images/Pepsico.png" alt="Pepsico Logo">
-                        <img src="images/sc-johnson-512.png" alt="SC Johnson Logo">
-                        <img src="images/Pandora.png" alt="Pandora Logo">
-                        <img src="images/Crocs.png" alt="Crocs Logo">
+                        <img src="images/monochrome_logos/1_PG_monochrome.png" alt="Procter & Gamble Logo">
+                        <img src="images/monochrome_logos/2_Unilever_monochrome.png" alt="Unilever Logo">
+                        <img src="images/monochrome_logos/3_Reckit_monochrome.png" alt="Reckitt Logo">
+                        <img src="images/monochrome_logos/4_Pepsico_monochrome.png" alt="Pepsico Logo">
+                        <img src="images/monochrome_logos/5_SCJohnson_monochrome.png" alt="SC Johnson Logo">
+                        <img src="images/monochrome_logos/6_Pandora_monochrome.png" alt="Pandora Logo">
+                        <img src="images/monochrome_logos/7_Crocks_monochrome.png" alt="Crocs Logo">
                     </div>
                 </div>
             </div>
@@ -607,7 +608,7 @@
             <div class="content-container">
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="md:col-span-1">
-                    <img src="images/trostli_logo_blue.jpg" alt="Trostli Leadership Logo" class="h-12 mb-4" >
+                    <img src="images/tld_logo_transparent.png" alt="Trostli Leadership Logo" class="h-12 mb-4" >
                     <p class="text-sm text-gray-400">&copy; <span id="current-year"></span> Trostli Leadership. <br>All Rights Reserved.</p>
                     </div>
 
