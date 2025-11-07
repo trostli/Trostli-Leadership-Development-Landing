@@ -24,11 +24,12 @@
             theme: {
                 extend: {
                     colors: {
-                        'slate-blue': '#264653',
+                        'deep-navy': '#0b1b3c',
+                        'primary-blue': '#10287b',
+                        'gold': '#d2b25c',
+                        'stone-gray': '#e0dcd9',
+                        'mist-blue': '#c0cde3',
                         'charcoal': '#333333',
-                        'light-gray': '#F5F5F5',
-                        'medium-gray': '#CCCCCC',
-                        'accent-gold': '#E9C46A',
                     },
                     fontFamily: {
                         // Using system sans-serif as a fallback for Helvetica Neue
@@ -49,7 +50,7 @@
         body { font-family: "Roboto", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; color: #333333; } /* Default body font and color */
 
         /* Specific Font Sizes based on guidelines */
-        h1 { font-size: 42px; color: #264653; line-height: 1.2; } /* Adjusted line-height for H1 */
+        h1 { font-size: 42px; color: #10287b; line-height: 1.2; } /* Adjusted line-height for H1 */
         h2 { font-size: 36px; color: #333333; }
         h3 { font-size: 24px; } /* Color applied contextually */
         p, li, label, input, textarea, details summary, details div { font-size: 16px; line-height: 1.6; } /* Added line-height for readability & FAQ */
@@ -57,7 +58,7 @@
 
         /* Button Styles */
         .btn-primary {
-            background-color: #264653;
+            background-color: #10287b;
             color: white;
             padding: 12px 24px;
             border-radius: 8px;
@@ -67,12 +68,12 @@
             text-align: center;
         }
         .btn-primary:hover {
-            background-color: #1e3845; /* Darker slate-blue on hover */
+            background-color: #0b1b3c; /* Darker primary-blue on hover */
         }
         .btn-secondary {
             background-color: transparent;
-            color: #264653;
-            border: 1px solid #264653;
+            color: #10287b;
+            border: 1px solid #10287b;
             padding: 11px 23px; /* Adjust padding for border */
             border-radius: 8px;
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -81,22 +82,23 @@
              text-align: center;
         }
         .btn-secondary:hover {
-            background-color: #264653;
+            background-color: #10287b;
             color: white;
         }
 
         .btn-inverted-primary {
             background-color: white;
-            color: #264653;
+            color: #10287b;
             padding: 12px 24px;
             border-radius: 8px;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease;
             font-weight: 500;
             display: inline-block;
             text-align: center;
         }
         .btn-inverted-primary:hover {
-            background-color: #f0f0f0;
+            background-color: #e0dcd9;
+            color: #0b1b3c;
         }
 
         .btn-inverted-secondary {
@@ -112,7 +114,7 @@
         }
         .btn-inverted-secondary:hover {
             background-color: white;
-            color: #264653;
+            color: #10287b;
         }
 
         /* Card Styles */
@@ -121,7 +123,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             padding: 24px;
-            border-top: 3px solid #264653; /* Thin slate-blue line accent */
+            border-top: 3px solid #10287b; /* Thin primary-blue line accent */
             height: 100%; /* Ensure cards in a row have same height */
             display: flex; /* Flexbox for alignment */
             flex-direction: column; /* Stack content vertically */
@@ -133,7 +135,7 @@
 
         /* Form Styles */
         input[type="text"], input[type="email"], input[type="tel"], textarea, select {
-            border: 1px solid #CCCCCC;
+            border: 1px solid #c0cde3;
             border-radius: 8px;
             padding: 10px 12px;
             width: 100%;
@@ -141,16 +143,16 @@
             font-weight: 300; /* Ensure form inputs are light */
         }
         input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus, select:focus {
-            border-color: #264653;
+            border-color: #10287b;
             outline: none;
-            box-shadow: 0 0 0 2px rgba(38, 70, 83, 0.3); /* slate-blue focus state */
+            box-shadow: 0 0 0 2px rgba(16, 40, 123, 0.3); /* primary-blue focus state */
         }
         .form-checkbox-group label { margin-left: 8px; font-weight: 300; } /* Ensure checkbox labels are light */
         label { font-weight: 500; } /* Make labels medium weight for clarity */
 
 
         /* Header/Nav Styles */
-        header { background: linear-gradient(180deg, #0B2A57 0%, #0F3D89 100%); }
+        header { background: linear-gradient(180deg, #0b1b3c 0%, #10287b 100%); }
         nav a {
             color: #333333;
             text-decoration: none;
@@ -160,12 +162,12 @@
             font-weight: 500; /* Medium weight for nav */
         }
         nav a:hover {
-            border-bottom-color: #264653; /* slate-blue underline on hover */
+            border-bottom-color: #10287b; /* primary-blue underline on hover */
         }
 
         /* Section Dividers */
-        .divider-light { border-top: 1px solid #F5F5F5; }
-        .divider-primary { border-top: 1px solid #264653; }
+        .divider-light { border-top: 1px solid #e0dcd9; }
+        .divider-primary { border-top: 1px solid #10287b; }
 
         /* Helper for abundant white space */
         .section-padding { padding: 64px 24px; } /* Generous padding */
@@ -211,7 +213,7 @@
             cursor: pointer;
             font-weight: 500; /* Medium weight for questions */
             padding: 16px 0;
-            border-bottom: 1px solid #e5e7eb; /* Light border */
+            border-bottom: 1px solid #c0cde3; /* Light border */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -223,7 +225,7 @@
             content: '+'; /* Plus sign for closed state */
             font-size: 1.5em;
             font-weight: 300;
-            color: #264653;
+            color: #10287b;
             transition: transform 0.2s ease-out;
         }
         details[open] > summary::after {
@@ -232,7 +234,7 @@
         }
         details div {
             padding: 16px 0;
-            border-bottom: 1px solid #e5e7eb; /* Light border */
+            border-bottom: 1px solid #c0cde3; /* Light border */
         }
         /* Hide the summary border when open and showing content */
         details[open] > summary {
@@ -277,7 +279,7 @@
     </header>
 
     <main>
-        <section class="bg-gradient-to-b from-[#FAFAFA] to-white section-padding">
+        <section class="bg-gradient-to-b from-stone-gray via-white to-white section-padding">
             <div class="content-container text-center max-w-6xl mx-auto">
                 <h1 class="text-5xl md:text-6xl text-charcoal leading-tight mb-6 source-sans-3-semibold">Navigate Leadership Transitions with Confidence and Impact</h1>
                 <p class="text-xl text-charcoal mb-8 max-w-3xl mx-auto hero-subheadline"><em>Strategic coaching</em> for accomplished leaders navigating <em>pivotal moments</em>, complex challenges, and <em>new opportunities</em>.</p>
@@ -300,7 +302,7 @@
             </div>
         </section>
 
-        <section id="about-carlos" class="bg-light-gray section-padding">
+        <section id="about-carlos" class="bg-stone-gray section-padding">
             <div class="content-container grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                    <h2 class="text-3xl font-bold text-charcoal mb-6 source-sans-3-semibold">Who We Are</h2>
@@ -326,28 +328,28 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                    <!-- Pillar 1: Strategic Clarity -->
-                    <div class="bg-light-gray p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
-                        <div class="w-16 h-16 rounded-full bg-slate-blue text-white flex items-center justify-center mb-6 mx-auto">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-slate-blue mb-4 text-center source-sans-3-semibold">Strategic Clarity</h3>
+                <!-- Pillar 1: Strategic Clarity -->
+                <div class="bg-mist-blue p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
+                    <div class="w-16 h-16 rounded-full bg-primary-blue text-white flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary-blue mb-4 text-center source-sans-3-semibold">Strategic Clarity</h3>
                         <div class="space-y-4">
                             <p>I help leaders navigate transitions with focus and confidence. Each engagement begins with clear goals and measurable outcomes — bringing structure, alignment, and accountability to every conversation. Drawing on over two decades of executive experience, I help you define what truly matters, identify the metrics that signal progress, and make decisions that accelerate impact.</p>
                             <p>Progress is measured not through reports, but through genuine transformation — seen, felt, and sustained by everyone involved.</p>
                         </div>
                     </div>
 
-                    <!-- Pillar 2: Leadership Presence -->
-                    <div class="bg-light-gray p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
-                        <div class="w-16 h-16 rounded-full bg-slate-blue text-white flex items-center justify-center mb-6 mx-auto">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-slate-blue mb-4 text-center source-sans-3-semibold">Leadership Presence</h3>
+                <!-- Pillar 2: Leadership Presence -->
+                <div class="bg-mist-blue p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
+                    <div class="w-16 h-16 rounded-full bg-primary-blue text-white flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary-blue mb-4 text-center source-sans-3-semibold">Leadership Presence</h3>
                         <div class="space-y-4">
                             <p>True leadership begins with self-awareness and authentic expression. Through focused dialogue and reflection, I help you access your natural leadership style, align it with your values, and communicate with clarity and confidence — even under pressure.</p>
                             <p>Together, we explore how your presence influences trust, engagement, and results. The goal is not to perform leadership, but to embody it — consistently, credibly, and with purpose.</p>
@@ -355,14 +357,14 @@
                         </div>
                     </div>
 
-                    <!-- Pillar 3: Trusted Relationships -->
-                    <div class="bg-light-gray p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
-                        <div class="w-16 h-16 rounded-full bg-slate-blue text-white flex items-center justify-center mb-6 mx-auto">
-                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-slate-blue mb-4 text-center source-sans-3-semibold">Trusted Relationships</h3>
+                <!-- Pillar 3: Trusted Relationships -->
+                <div class="bg-mist-blue p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
+                    <div class="w-16 h-16 rounded-full bg-primary-blue text-white flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-primary-blue mb-4 text-center source-sans-3-semibold">Trusted Relationships</h3>
                         <div class="space-y-4">
                             <p>No leader succeeds alone. Sustainable change depends on strong relationships built on trust and mutual understanding.</p>
                             <p>In this part of the work, we focus on how you engage stakeholders — from direct reports to peers and senior executives. Through real-world dialogue, I help you strengthen your capacity to listen, align, and lead collaboratively, especially across diverse or high-stakes contexts.</p>
@@ -378,7 +380,7 @@
             </div>
         </section>
 
-        <section id="services" class="bg-slate-blue section-padding">
+        <section id="services" class="bg-primary-blue section-padding">
             <div class="content-container">
                 <h2 class="text-3xl font-bold text-white mb-12 text-center source-sans-3-semibold">Services</h2>
 
@@ -392,7 +394,7 @@
                         <div x-ref="slider" class="flex pb-4 px-4 overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4" style="scroll-behavior: smooth;">
                             <div class="flex-shrink-0 w-[88%] md:w-[55%] snap-start">
                                 <div class="h-full p-8 bg-white rounded-lg shadow-md">
-                                    <h3 class="text-2xl font-semibold mb-4 text-slate-blue source-sans-3-semibold">Leadership Transitions & Onboarding</h3>
+                                    <h3 class="text-2xl font-semibold mb-4 text-primary-blue source-sans-3-semibold">Leadership Transitions & Onboarding</h3>
                                     <p class="mb-4">Stepping into a new role is one of the most defining moments in a leader’s career. Even the most experienced executives can face unexpected challenges in their first months. I help leaders and organizations transform these transitions into powerful opportunities for success.</p>
                                     <p class="mb-6">Using a practical, proven approach, we accelerate trust, clarify expectations, and establish credibility early on—so you can focus on what matters most: leading with clarity and delivering results.</p>
                                     <h4 class="font-semibold text-charcoal mb-3">Key outcomes:</h4>
@@ -406,7 +408,7 @@
                             </div>
                             <div class="flex-shrink-0 w-[88%] md:w-[55%] snap-start">
                                 <div class="h-full p-8 bg-white rounded-lg shadow-md">
-                                    <h3 class="text-2xl font-semibold mb-4 text-slate-blue source-sans-3-semibold">1-on-1 Leadership Coaching</h3>
+                                    <h3 class="text-2xl font-semibold mb-4 text-primary-blue source-sans-3-semibold">1-on-1 Leadership Coaching</h3>
                                     <p class="mb-4">Today’s leaders face complex challenges that demand clarity, adaptability, and emotional intelligence. My coaching provides a confidential space for you to step back, gain perspective, and make decisions with greater confidence and precision.</p>
                                     <p class="mb-6">Grounded in more than two decades of executive experience, each session bridges personal growth with measurable business impact. Together, we strengthen your ability to lead through uncertainty, build trust, and deliver results that last.</p>
                                     <h4 class="font-semibold text-charcoal mb-3">Key outcomes:</h4>
@@ -421,7 +423,7 @@
                             </div>
                             <div class="flex-shrink-0 w-[88%] md:w-[55%] snap-start">
                                 <div class="h-full p-8 bg-white rounded-lg shadow-md">
-                                    <h3 class="text-2xl font-semibold mb-4 text-slate-blue source-sans-3-semibold">Team Coaching</h3>
+                                    <h3 class="text-2xl font-semibold mb-4 text-primary-blue source-sans-3-semibold">Team Coaching</h3>
                                     <p class="mb-4">Strong teams are built on trust, clarity, and shared purpose. My coaching helps leadership teams align around what truly matters, improving communication, collaboration, and collective performance.</p>
                                     <p class="mb-6">Through focused, practical sessions, we surface the real conversations that drive results. Teams leave more connected, more accountable, and ready to deliver together.</p>
                                     <h4 class="font-semibold text-charcoal mb-3">Key outcomes:</h4>
@@ -435,7 +437,7 @@
                             </div>
                             <div class="flex-shrink-0 w-[88%] md:w-[55%] snap-start">
                                 <div class="h-full p-8 bg-white rounded-lg shadow-md">
-                                    <h3 class="text-2xl font-semibold mb-4 text-slate-blue source-sans-3-semibold">Strategic Boost Workshops</h3>
+                                    <h3 class="text-2xl font-semibold mb-4 text-primary-blue source-sans-3-semibold">Strategic Boost Workshops</h3>
                                     <p class="mb-4">When time is limited but impact matters, a focused workshop can spark clarity and alignment that lasts. These sessions help leadership teams make critical decisions, accelerate execution, and regain momentum around shared goals.</p>
                                     <p class="mb-6">Grounded in real business challenges, each workshop is practical, collaborative, and tailored to your specific needs, ensuring your team leaves aligned, energized, and ready to take action.</p>
                                     <h4 class="font-semibold text-charcoal mb-3">Key outcomes:</h4>
@@ -452,10 +454,10 @@
 
                         <!-- Carousel Controls -->
                         <div class="absolute inset-0 flex items-center justify-between pointer-events-none">
-                            <button @click="prev()" class="p-2 -ml-4 text-slate-blue bg-white/90 rounded-full pointer-events-auto hover:bg-white lg:-ml-10">
+                            <button @click="prev()" class="p-2 -ml-4 text-primary-blue bg-white/90 rounded-full pointer-events-auto hover:bg-white lg:-ml-10">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                             </button>
-                            <button @click="next()" class="p-2 -mr-4 text-slate-blue bg-white/90 rounded-full pointer-events-auto hover:bg-white lg:-mr-10">
+                            <button @click="next()" class="p-2 -mr-4 text-primary-blue bg-white/90 rounded-full pointer-events-auto hover:bg-white lg:-mr-10">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                             </button>
                         </div>
@@ -474,33 +476,33 @@
                 <h2 class="text-3xl font-bold text-charcoal mb-4 text-center source-sans-3-semibold">Who We Work With</h2>
                 <p class="text-charcoal/80 max-w-3xl mx-auto mb-10">We partner with accomplished leaders and teams at pivotal moments—when clarity, alignment, and decisive action matter most.</p>
                 <div class="flex flex-wrap justify-center gap-4 md:gap-5">
-                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-slate-blue bg-white transition-all duration-200 hover:bg-slate-blue/5">
+                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-primary-blue bg-white transition-all duration-200 hover:bg-mist-blue/30">
                         <div class="w-8 h-8 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6" fill="none" stroke="#264653" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="#10287b" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
                         </div>
                         <p class="font-medium text-charcoal">Newly promoted executives transitioning into larger roles</p>
                     </div>
-                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-slate-blue bg-white transition-all duration-200 hover:bg-slate-blue/5">
+                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-primary-blue bg-white transition-all duration-200 hover:bg-mist-blue/30">
                         <div class="w-8 h-8 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6" fill="none" stroke="#E9C46A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="#d2b25c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                         </div>
                         <p class="font-medium text-charcoal">Senior leaders navigating complex organizational transitions</p>
                     </div>
-                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-slate-blue bg-white transition-all duration-200 hover:bg-slate-blue/5">
+                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-primary-blue bg-white transition-all duration-200 hover:bg-mist-blue/30">
                         <div class="w-8 h-8 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6" fill="none" stroke="#264653" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="#10287b" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                         </div>
                         <p class="font-medium text-charcoal">Emerging leaders and high-potentials preparing for advancement</p>
                     </div>
-                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-slate-blue bg-white transition-all duration-200 hover:bg-slate-blue/5">
+                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-primary-blue bg-white transition-all duration-200 hover:bg-mist-blue/30">
                         <div class="w-8 h-8 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6" fill="none" stroke="#E9C46A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm-9 3a2 2 0 11-4 0 2 2 0 014 0zm12 0a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="#d2b25c" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm-9 3a2 2 0 11-4 0 2 2 0 014 0zm12 0a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                         </div>
                         <p class="font-medium text-charcoal">Executive teams seeking to enhance alignment and effectiveness</p>
                     </div>
-                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-slate-blue bg-white transition-all duration-200 hover:bg-slate-blue/5">
+                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full border-2 border-primary-blue bg-white transition-all duration-200 hover:bg-mist-blue/30">
                         <div class="w-8 h-8 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6" fill="none" stroke="#264653" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="#10287b" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                         </div>
                         <p class="font-medium text-charcoal">Organizations preparing for AI, digital, or cultural transformation</p>
                     </div>
@@ -508,7 +510,7 @@
             </div>
         </section>
 
-        <section id="free-session" class="bg-light-gray section-padding">
+        <section id="free-session" class="bg-stone-gray section-padding">
             <div class="content-container">
                 <div class="max-w-4xl mx-auto">
                     <h2 class="text-3xl font-bold text-charcoal mb-4 source-sans-3-semibold">Your Leadership Isn't Broken, But the Way You're Navigating Change Might Be</h2>
@@ -558,43 +560,43 @@
                 <div x-data="testimonialsCarousel()" class="max-w-6xl mx-auto">
                     <div class="flex items-center justify-center mb-4 space-x-2">
                         <template x-for="i in (window.innerWidth >= 1024 ? slidesCount - 2 : slidesCount)" :key="i">
-                            <button @click="activeSlide = i - 1; scrollToActive()" class="h-3 transition-all duration-300 rounded-full" :class="{'w-6 bg-slate-blue': activeSlide === (i - 1), 'w-3 bg-medium-gray hover:bg-charcoal': activeSlide !== (i - 1)}"></button>
+                            <button @click="activeSlide = i - 1; scrollToActive()" class="h-3 transition-all duration-300 rounded-full" :class="{'w-6 bg-primary-blue': activeSlide === (i - 1), 'w-3 bg-mist-blue hover:bg-primary-blue': activeSlide !== (i - 1)}"></button>
                         </template>
                     </div>
                     <div class="relative">
                         <div x-ref="slider" class="flex pb-4 px-4 overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4" style="scroll-behavior: smooth;">
                             <div class="flex-shrink-0 w-[88%] lg:w-[32%] snap-start">
-                                <div class="h-full p-8 bg-light-gray rounded-lg shadow-sm">
-                                   <h4 class="font-semibold text-slate-blue mb-2">Executive Coaching</h4>
+                                <div class="h-full p-8 bg-stone-gray rounded-lg shadow-sm">
+                                   <h4 class="font-semibold text-primary-blue mb-2">Executive Coaching</h4>
                                    <p class="italic mb-4 text-charcoal">“Carlos created a welcoming space filled with active listening, no judgment, and powerful questions that helped me explore future possibilities. I felt fully at ease in a trusting environment—something essential in such a personal and transformative journey.”</p>
                                    <p class="font-semibold text-charcoal">— Senior Global Marketing Executive, Consumer Goods</p>
                                 </div>
                             </div>
                             <div class="flex-shrink-0 w-[88%] lg:w-[32%] snap-start">
-                                <div class="h-full p-8 bg-light-gray rounded-lg shadow-sm">
-                                   <h4 class="font-semibold text-slate-blue mb-2">Leadership Development</h4>
-                                   <p class="italic mb-4 text-charcoal">“Our conversations helped me broaden my strategic vision and strengthen my ability to inspire and lead people. This work has been fundamental to my growth as an executive and as a person.”</p>
+                                <div class="h-full p-8 bg-stone-gray rounded-lg shadow-sm">
+                                   <h4 class="font-semibold text-primary-blue mb-2">Leadership Development</h4>
+                                   <p class="italic mb-4 text-charcoal">"Our conversations helped me broaden my strategic vision and strengthen my ability to inspire and lead people. This work has been fundamental to my growth as an executive and as a person."</p>
                                    <p class="font-semibold text-charcoal">— Business Unit Leader, Multinational Company</p>
                                 </div>
                             </div>
                             <div class="flex-shrink-0 w-[88%] lg:w-[32%] snap-start">
-                                <div class="h-full p-8 bg-light-gray rounded-lg shadow-sm">
-                                   <h4 class="font-semibold text-slate-blue mb-2">Career Transition</h4>
-                                   <p class="italic mb-4 text-charcoal">“After a challenging career transition, Carlos helped me strategize for a powerful start in my new leadership role. His blend of practical insight and interpersonal guidance gave me the confidence and clarity I needed.”</p>
+                                <div class="h-full p-8 bg-stone-gray rounded-lg shadow-sm">
+                                   <h4 class="font-semibold text-primary-blue mb-2">Career Transition</h4>
+                                   <p class="italic mb-4 text-charcoal">"After a challenging career transition, Carlos helped me strategize for a powerful start in my new leadership role. His blend of practical insight and interpersonal guidance gave me the confidence and clarity I needed."</p>
                                    <p class="font-semibold text-charcoal">— Director, Global Tech Company</p>
                         </div>
                             </div>
                              <div class="flex-shrink-0 w-[88%] lg:w-[32%] snap-start">
-                                <div class="h-full p-8 bg-light-gray rounded-lg shadow-sm">
-                                   <h4 class="font-semibold text-slate-blue mb-2">Entrepreneurial Transformation</h4>
-                                   <p class="italic mb-4 text-charcoal">“Through the coaching process, we aligned on a clear and shared purpose that brought our partners together and turned into concrete goals and actions. Coaching with Carlos was a decisive factor in this transformation.”</p>
+                                <div class="h-full p-8 bg-stone-gray rounded-lg shadow-sm">
+                                   <h4 class="font-semibold text-primary-blue mb-2">Entrepreneurial Transformation</h4>
+                                   <p class="italic mb-4 text-charcoal">"Through the coaching process, we aligned on a clear and shared purpose that brought our partners together and turned into concrete goals and actions. Coaching with Carlos was a decisive factor in this transformation."</p>
                                    <p class="font-semibold text-charcoal">— Founder, Creative Industry</p>
                         </div>
                             </div>
                              <div class="flex-shrink-0 w-[88%] lg:w-[32%] snap-start">
-                                <div class="h-full p-8 bg-light-gray rounded-lg shadow-sm">
-                                   <h4 class="font-semibold text-slate-blue mb-2">Clarity & Direction</h4>
-                                   <p class="italic mb-4 text-charcoal">“Carlos helped me create a clearer professional identity and gain perspective on my career stage. Without a doubt, he brings deep experience, knowledge, and a structured methodology that truly works.”</p>
+                                <div class="h-full p-8 bg-stone-gray rounded-lg shadow-sm">
+                                   <h4 class="font-semibold text-primary-blue mb-2">Clarity & Direction</h4>
+                                   <p class="italic mb-4 text-charcoal">"Carlos helped me create a clearer professional identity and gain perspective on my career stage. Without a doubt, he brings deep experience, knowledge, and a structured methodology that truly works."</p>
                                    <p class="font-semibold text-charcoal">— Senior Executive, FMCG Sector</p>
                         </div>
                             </div>
@@ -613,7 +615,7 @@
             </div>
         </section>
 
-        <section id="faq" class="bg-light-gray section-padding">
+        <section id="faq" class="bg-stone-gray section-padding">
             <div class="content-container">
                 <div class="mb-16 max-w-4xl mx-auto">
                     <h2 class="text-3xl font-bold text-charcoal mb-8 text-center source-sans-3-semibold">Frequently Asked Questions</h2>
@@ -650,7 +652,7 @@
             </div>
         </section>
 
-        <section id="contact" class="bg-slate-blue section-padding">
+        <section id="contact" class="bg-primary-blue section-padding">
             <div class="content-container text-center">
                 <h2 class="text-4xl text-white font-bold mb-8 source-sans-3-semibold">Ready to Turn Transitions Into Opportunities?</h2>
                 <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
