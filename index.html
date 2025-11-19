@@ -68,61 +68,95 @@
         .btn-primary {
             background-color: #10287b;
             color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
+            padding: 14px 26px; /* Slightly taller for presence */
+            border-radius: 6px;
             font-weight: 500; /* Medium weight for buttons */
             display: inline-block;
             text-align: center;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* Subtle depth */
+            transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.2s ease, transform 0.2s ease;
         }
         .btn-primary:hover {
             background-color: #0b1b3c; /* Darker primary-blue on hover */
+            transform: translateY(-1px); /* Subtle lift */
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
         }
+
         .btn-secondary {
             background-color: transparent;
             color: #10287b;
             border: 1px solid #10287b;
-            padding: 11px 23px; /* Adjust padding for border */
-            border-radius: 8px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            font-weight: 500; /* Medium weight for buttons */
-             display: inline-block;
-             text-align: center;
+            padding: 13px 25px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.2s ease, transform 0.2s ease;
         }
         .btn-secondary:hover {
             background-color: #10287b;
             color: white;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
         }
 
         .btn-inverted-primary {
             background-color: white;
             color: #10287b;
-            padding: 12px 24px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 14px 26px;
+            border-radius: 6px;
             font-weight: 500;
             display: inline-block;
             text-align: center;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+            transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.2s ease, transform 0.2s ease;
         }
         .btn-inverted-primary:hover {
             background-color: #e0dcd9;
             color: #0b1b3c;
+            transform: translateY(-1px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
         }
 
         .btn-inverted-secondary {
             background-color: transparent;
             color: white;
             border: 1px solid white;
-            padding: 11px 23px;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            padding: 13px 25px;
+            border-radius: 6px;
             font-weight: 500;
             display: inline-block;
             text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.2s ease, transform 0.2s ease;
         }
         .btn-inverted-secondary:hover {
             background-color: white;
             color: #10287b;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+        }
+
+        /* Gold outline button for light backgrounds */
+        .btn-gold-outline {
+            background-color: white;
+            color: #10287b;
+            border: 1px solid #d2b25c;
+            padding: 13px 25px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.2s ease, transform 0.2s ease, border-color 0.25s ease;
+        }
+        .btn-gold-outline:hover {
+            background-color: #d2b25c;
+            color: #0b1b3c;
+            border-color: #b8963f;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
         }
 
         /* Card Styles */
@@ -356,7 +390,7 @@
                 <h1 class="text-5xl md:text-6xl text-white leading-tight mb-6 font-bold" style="font-family: 'Source Sans 3', sans-serif;">Navigate Leadership Transitions with Confidence and Impact</h1>
                 <p class="mb-8 max-w-3xl mx-auto hero-subheadline">Strategic coaching for accomplished leaders navigating pivotal moments, complex challenges, and new opportunities.</p>
                 <div class="flex justify-center gap-4 mb-8">
-                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary">Schedule Your Free Consultation</a>
+                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary">Schedule Your Free Consultation &rarr;</a>
                 </div>
                 <div class="mt-16 w-full overflow-hidden relative mask-gradient">
                     <h3 class="text-sm tracking-widest text-stone-gray uppercase mb-8">Trusted by Leaders from <span class="text-gold font-semibold border-b border-gold pb-0.5">Global Organizations</span></h3>
@@ -457,7 +491,7 @@
 
                 <!-- CTA -->
                 <div class="text-center">
-                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-primary text-lg">Explore how we can work together</a>
+                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-gold-outline text-lg">Explore how we can work together &rarr;</a>
                 </div>
             </div>
         </section>
@@ -560,7 +594,7 @@
 
                 <!-- CTA -->
                 <div class="text-center mt-12">
-                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary text-lg">Book a Discovery Call</a>
+                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary text-lg">Book a Discovery Call &rarr;</a>
                 </div>
             </div>
         </section>
@@ -639,7 +673,7 @@
 
                     <div class="mt-10">
                         <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center text-lg">
-                            <span class="mr-2">👉</span> Request My Free Coaching Session
+                            Request Your Free Session &rarr;
                         </a>
                     </div>
                 </div>
@@ -712,12 +746,9 @@
         <section id="contact" class="bg-primary-blue section-padding">
             <div class="content-container text-center">
                 <h2 class="text-4xl text-white font-bold mb-8 source-sans-3-semibold">Ready to Turn Transitions Into Opportunities?</h2>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-12">
+                <div class="flex justify-center items-center mb-12">
                     <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary inline-flex items-center text-lg">
-                        <span class="mr-2">👉</span> Book a Discovery Call
-                    </a>
-                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-secondary inline-flex items-center text-lg">
-                        <span class="mr-2">👉</span> Request a Free Coaching Session
+                        Schedule Your Consultation &rarr;
                     </a>
                 </div>
             </div>
