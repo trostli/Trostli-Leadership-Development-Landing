@@ -241,11 +241,48 @@
              border-bottom: none;
         }
         .hero-subheadline {
-            em {
-                font-weight: 500;
-                font-style: normal;
-            }
+            color: #d2b25c; /* Accent gold */
+            font-size: 1.125rem; /* Reduced size (~18px) */
+            letter-spacing: 0.025em; /* Slight letter spacing */
+            font-weight: 400; /* Normal weight for readability against gold */
         }
+
+        .hero-subheadline em {
+            font-weight: 600; /* Make emphasized text slightly bolder */
+            font-style: normal;
+            color: #d2b25c; /* Ensure ems inherit gold */
+        }
+
+        .hero-animated-bg {
+            background: linear-gradient(135deg, #0b1b3c, #10287b, #0b1b3c);
+            background-size: 200% 200%;
+            animation: subtle-gradient 15s ease infinite;
+        }
+
+        @keyframes subtle-gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Filter for logos on dark background */
+        .logo-grid-light img {
+            height: 35px;
+            width: auto;
+            /*
+               These logos appear to have white backgrounds.
+               1. Invert colors: Black logo -> White logo, White bg -> Black bg.
+               2. mix-blend-mode: screen: Makes the Black bg transparent, keeps White logo white.
+            */
+            filter: invert(1) grayscale(100%);
+            mix-blend-mode: screen;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+        .logo-grid-light img:hover {
+            opacity: 1;
+        }
+
 
         .source-sans-3-semibold {
             font-family: "Source Sans 3", sans-serif;
@@ -279,17 +316,16 @@
     </header>
 
     <main>
-        <section class="bg-gradient-to-b from-stone-gray via-white to-white section-padding">
+        <section class="hero-animated-bg section-padding">
             <div class="content-container text-center max-w-6xl mx-auto">
-                <h1 class="text-5xl md:text-6xl text-charcoal leading-tight mb-6 source-sans-3-semibold">Navigate Leadership Transitions with Confidence and Impact</h1>
-                <p class="text-xl text-charcoal mb-8 max-w-3xl mx-auto hero-subheadline"><em>Strategic coaching</em> for accomplished leaders navigating <em>pivotal moments</em>, complex challenges, and <em>new opportunities</em>.</p>
+                <h1 class="text-5xl md:text-6xl text-white leading-tight mb-6 font-bold" style="font-family: 'Source Sans 3', sans-serif;">Navigate Leadership Transitions with Confidence and Impact</h1>
+                <p class="mb-8 max-w-3xl mx-auto hero-subheadline">Strategic coaching for accomplished leaders navigating pivotal moments, complex challenges, and new opportunities.</p>
                 <div class="flex justify-center gap-4 mb-8">
-                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a Discovery Call</a>
-                    <a href="#about-carlos" class="btn-secondary">Learn More</a>
+                    <a href="https://cal.com/trostli-leadership/free-confidential-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary">Schedule Your Free Consultation</a>
                 </div>
                 <div class="mt-16">
-                    <h3 class="text-sm tracking-widest text-gray-500 uppercase mb-6">Trusted by Leaders from Global Organizations</h3>
-                    <div class="logo-grid flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
+                    <h3 class="text-sm tracking-widest text-stone-gray uppercase mb-6">Trusted by Leaders from Global Organizations</h3>
+                    <div class="logo-grid-light flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
                         <img src="images/monochrome_logos/1_PG_monochrome.png" alt="Procter & Gamble Logo">
                         <img src="images/monochrome_logos/2_Unilever_monochrome.png" alt="Unilever Logo">
                         <img src="images/monochrome_logos/3_Reckit_monochrome.png" alt="Reckitt Logo">
