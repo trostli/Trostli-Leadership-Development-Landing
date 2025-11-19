@@ -387,10 +387,10 @@
         <section id="about-carlos" class="bg-stone-gray section-padding">
             <div class="content-container grid lg:grid-cols-2 gap-16 items-center">
                 <div>
-                   <h2 class="text-3xl font-bold text-charcoal mb-6 source-sans-3-semibold">Who We Are</h2>
-                   <p class="mb-4">At Trostli Leadership Development, we believe leadership is built on trust, ethics, and clarity of purpose.</p>
-                   <p class="mb-4">Founded by Carlos Trostli—an executive with over 20 years of international experience at P&G, Unilever, Reckitt, and SC Johnson—our approach bridges global business acumen with a deeply human touch.</p>
-                   <p>We help leaders and organizations align cultures, strengthen collaboration, and turn transitions into long-term success.</p>
+                   <h2 class="text-3xl font-bold text-charcoal mb-6 source-sans-3-semibold">About Carlos</h2>
+                   <p class="mb-4">I coach leaders navigating transition, reducing uncertainty and avoiding early missteps while helping them build trust, adapt quickly, and lead with confidence from day one.</p>
+                   <p class="mb-4">For more than 20 years, I have led and developed teams across global roles at Procter &amp; Gamble, Unilever, Reckitt, and SC Johnson. This experience shaped a coaching approach grounded in clarity, trust, and human connection. Leaders work with me when they are stepping into new roles, expanding responsibilities, joining new cultures, or leading through organizational change.</p>
+                   <p>My coaching creates a calm, strategic space for reflection and action. Together we work to strengthen early alignment, accelerate trust, and build the clarity leaders need to navigate complexity with confidence.</p>
                  </div>
                 <div>
                     <img src="images/cdt_image.png"
@@ -463,86 +463,98 @@
         </section>
 
         <section id="services" class="bg-primary-blue section-padding">
-            <div class="content-container">
-                <h2 class="text-3xl font-bold text-white mb-12 text-center source-sans-3-semibold">Services</h2>
+            <div class="content-container text-white">
+                <div class="max-w-4xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white tracking-tight source-sans-3-semibold">Services</h2>
+                    <p class="text-lg text-white/80">
+                        Helping leaders start strong, accelerate trust, and navigate change with clarity and confidence.
+                    </p>
+                </div>
 
-                <div x-data="carousel()" class="max-w-4xl mx-auto">
-                    <div class="flex items-center justify-center mb-4 space-x-2">
-                        <template x-for="i in (window.innerWidth >= 768 ? slidesCount - 1 : slidesCount)" :key="i">
-                            <button @click="activeSlide = i - 1; scrollToActive()" class="h-3 transition-all duration-300 rounded-full" :class="{'w-6 bg-white': activeSlide === (i - 1), 'w-3 bg-white/40 hover:bg-white/60': activeSlide !== (i - 1)}"></button>
-                        </template>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- 1. Leadership Transition Coaching -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">1. Leadership Transition Coaching</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">For newly promoted executives, leaders entering new organizations, or taking on expanded scope.</p>
+                        <p class="mb-4 text-sm">Transitions create uncertainty — both for the leader and the teams around them. This coaching accelerates clarity, trust, and effective decision-making from day one.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help leaders:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Reduce uncertainty and avoid early missteps</li>
+                            <li>Earn trust quickly across teams, peers, and stakeholders</li>
+                            <li>Gain strategic clarity in the first 60–90 days</li>
+                            <li>Adapt to new cultures, expectations, or global contexts</li>
+                            <li>Strengthen presence, influence, and alignment early in the role</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
+                        <p class="text-sm text-charcoal/80">Executives moving into new roles, leading new teams, joining unfamiliar cultures, or stepping into global responsibilities.</p>
                     </div>
-                    <div class="relative">
-                        <div x-ref="slider" class="flex pb-4 px-4 overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4" style="scroll-behavior: smooth;">
-                            <div class="flex-shrink-0 w-[88%] md:w-[55%] snap-start">
-                                <div class="h-full p-8 bg-white rounded-lg shadow-md">
-                                    <h3 class="text-2xl font-semibold mb-4 text-primary-blue source-sans-3-semibold">Leadership Transitions & Onboarding</h3>
-                                    <p class="mb-4">Stepping into a new role is one of the most defining moments in a leader’s career. Even the most experienced executives can face unexpected challenges in their first months. I help leaders and organizations transform these transitions into powerful opportunities for success.</p>
-                                    <p class="mb-6">Using a practical, proven approach, we accelerate trust, clarify expectations, and establish credibility early on—so you can focus on what matters most: leading with clarity and delivering results.</p>
-                                    <h4 class="font-semibold text-charcoal mb-3">Key outcomes:</h4>
-                                    <ul class="space-y-2 text-sm list-disc list-inside">
-                                        <li>Fast alignment between the leader, team, and stakeholders</li>
-                                        <li>Early trust and confidence within the first 90 days</li>
-                                        <li>Clear priorities and measurable early wins</li>
-                                        <li>Reduced transition risk and stronger long-term retention</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[88%] md:w-[55%] snap-start">
-                                <div class="h-full p-8 bg-white rounded-lg shadow-md">
-                                    <h3 class="text-2xl font-semibold mb-4 text-primary-blue source-sans-3-semibold">1-on-1 Leadership Coaching</h3>
-                                    <p class="mb-4">Today’s leaders face complex challenges that demand clarity, adaptability, and emotional intelligence. My coaching provides a confidential space for you to step back, gain perspective, and make decisions with greater confidence and precision.</p>
-                                    <p class="mb-6">Grounded in more than two decades of executive experience, each session bridges personal growth with measurable business impact. Together, we strengthen your ability to lead through uncertainty, build trust, and deliver results that last.</p>
-                                    <h4 class="font-semibold text-charcoal mb-3">Key outcomes:</h4>
-                                    <ul class="space-y-2 text-sm list-disc list-inside">
-                                        <li>Greater clarity and confidence in high-stakes situations</li>
-                                        <li>Stronger strategic thinking and communication</li>
-                                        <li>Enhanced resilience and emotional agility under pressure</li>
-                                        <li>Renewed authenticity and presence as a leader</li>
-                                        <li>Sustainable habits that drive performance and growth</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[88%] md:w-[55%] snap-start">
-                                <div class="h-full p-8 bg-white rounded-lg shadow-md">
-                                    <h3 class="text-2xl font-semibold mb-4 text-primary-blue source-sans-3-semibold">Team Coaching</h3>
-                                    <p class="mb-4">Strong teams are built on trust, clarity, and shared purpose. My coaching helps leadership teams align around what truly matters, improving communication, collaboration, and collective performance.</p>
-                                    <p class="mb-6">Through focused, practical sessions, we surface the real conversations that drive results. Teams leave more connected, more accountable, and ready to deliver together.</p>
-                                    <h4 class="font-semibold text-charcoal mb-3">Key outcomes:</h4>
-                                    <ul class="space-y-2 text-sm list-disc list-inside">
-                                        <li>Clear alignment on purpose and priorities</li>
-                                        <li>Stronger trust and collaboration</li>
-                                        <li>Better communication and accountability</li>
-                                        <li>Improved execution and results under pressure</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="flex-shrink-0 w-[88%] md:w-[55%] snap-start">
-                                <div class="h-full p-8 bg-white rounded-lg shadow-md">
-                                    <h3 class="text-2xl font-semibold mb-4 text-primary-blue source-sans-3-semibold">Strategic Boost Workshops</h3>
-                                    <p class="mb-4">When time is limited but impact matters, a focused workshop can spark clarity and alignment that lasts. These sessions help leadership teams make critical decisions, accelerate execution, and regain momentum around shared goals.</p>
-                                    <p class="mb-6">Grounded in real business challenges, each workshop is practical, collaborative, and tailored to your specific needs, ensuring your team leaves aligned, energized, and ready to take action.</p>
-                                    <h4 class="font-semibold text-charcoal mb-3">Key outcomes:</h4>
-                                    <ul class="space-y-2 text-sm list-disc list-inside">
-                                        <li>Clear priorities and actionable next steps</li>
-                                        <li>Stronger alignment and commitment across the team</li>
-                                        <li>Sharper decision-making and execution</li>
-                                        <li>Renewed focus, energy, and direction</li>
-                                        <li>Immediate, actionable next steps</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Carousel Controls -->
-                        <div class="absolute inset-0 flex items-center justify-between pointer-events-none">
-                            <button @click="prev()" class="p-2 -ml-4 text-primary-blue bg-white/90 rounded-full pointer-events-auto hover:bg-white lg:-ml-10">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                            </button>
-                            <button @click="next()" class="p-2 -mr-4 text-primary-blue bg-white/90 rounded-full pointer-events-auto hover:bg-white lg:-mr-10">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                            </button>
-                        </div>
+                    <!-- 2. Senior Leadership Team Development -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">2. Senior Leadership Team Development</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">For leadership teams seeking stronger cohesion, alignment, and trust.</p>
+                        <p class="mb-4 text-sm">When teams don’t have shared clarity or trust, collaboration slows and decision-making becomes fragmented. This work helps teams operate as a unified leadership group.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help teams:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Build trust and alignment across diverse personalities and functions</li>
+                            <li>Strengthen communication and reduce friction</li>
+                            <li>Improve cross-team collaboration and problem-solving</li>
+                            <li>Establish shared priorities and a unified operating rhythm</li>
+                            <li>Enable faster decision-making in moments of change</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
+                        <p class="text-sm text-charcoal/80">Senior teams facing cultural shifts, new leadership, restructuring, rapid growth, or cross-functional challenges.</p>
+                    </div>
+
+                    <!-- 3. Executive Coaching -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">3. Executive Coaching</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">For leaders who want dedicated support to think clearly, lead effectively, and grow with confidence.</p>
+                        <p class="mb-4 text-sm">Executives choose coaching when they need a trusted partner to help them navigate complexity, sharpen leadership presence, and create sustainable impact.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help leaders:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Gain clarity in complex or high-pressure decisions</li>
+                            <li>Strengthen resilience and emotional agility</li>
+                            <li>Lead with greater authenticity, confidence, and influence</li>
+                            <li>Improve relationships with peers, teams, and stakeholders</li>
+                            <li>Prepare for the next leadership step with purpose and clarity</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Suitable for:</h4>
+                        <p class="text-sm text-charcoal/80">Experienced leaders, emerging executives, founders, or global leaders who want personalized support for growth and decision-making.</p>
+                    </div>
+
+                    <!-- 4. Organizational Transition Support -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">4. Organizational Transition Support</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">For companies undergoing change, restructuring, or cultural shifts.</p>
+                        <p class="mb-4 text-sm">Organizations experience friction during moments of transition. This advisory support helps CHROs and executives ensure leaders stay aligned, focused, and effective.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">What this includes:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Transition planning and onboarding support for key roles</li>
+                            <li>Stakeholder alignment and team mapping</li>
+                            <li>Culture and trust assessments</li>
+                            <li>Leadership communication support</li>
+                            <li>Clarifying priorities, expectations, and early wins</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
+                        <p class="text-sm text-charcoal/80">Organizations navigating change, mergers, new leadership, restructuring, or global expansion.</p>
+                    </div>
+
+                    <!-- 5. Strategic Boost Workshops -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8 lg:col-span-2">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">5. Strategic Boost Workshops</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">High-impact, single-session workshops to create clarity, momentum, and alignment.</p>
+                        <p class="mb-4 text-sm">Designed for immediate traction, these sessions help teams resolve pressing challenges or accelerate strategic clarity.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">Examples:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Define team culture and shared values</li>
+                            <li>Clarify vision, priorities, and annual plans</li>
+                            <li>Strengthen collaboration and communication norms</li>
+                            <li>Break through creative or strategic blocks</li>
+                            <li>Align on cross-functional priorities</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
+                        <p class="text-sm text-charcoal/80">Teams needing immediate clarity, alignment, or renewed energy during demanding periods.</p>
                     </div>
                 </div>
 
