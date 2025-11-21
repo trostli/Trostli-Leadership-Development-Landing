@@ -314,42 +314,11 @@
              animation: scroll-continuous 30s linear infinite;
         }
 
-        /* Services Carousel Track */
-        .services-carousel-track {
-             display: flex;
-             width: max-content;
-             animation: scroll-services-continuous 60s linear infinite;
-             gap: 2rem;
-        }
-
         /* Removed hover pause as requested */
 
         @keyframes scroll-continuous {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); } /* Move halfway if content is duplicated */
-        }
-
-        @keyframes scroll-services-continuous {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); } /* Move halfway if content is duplicated */
-        }
-
-        /* Services Card Styles for Carousel */
-        .service-card {
-            flex-shrink: 0;
-            width: 320px; /* Fixed width for carousel cards */
-        }
-
-        @media (min-width: 768px) {
-            .service-card {
-                width: 400px;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .service-card {
-                width: 450px;
-            }
         }
 
         /* Filter for logos on dark background */
@@ -538,179 +507,90 @@
                     </p>
                 </div>
 
-                <div class="w-full overflow-hidden relative mask-gradient">
-                    <div class="services-carousel-track">
-                        <!-- First Set of Service Cards -->
-                        <!-- 1. Leadership Transition Coaching -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">1. Leadership Transition Coaching</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">For newly promoted executives, leaders entering new organizations, or taking on expanded scope.</p>
-                            <p class="mb-4 text-sm">Transitions create uncertainty — both for the leader and the teams around them. This coaching accelerates clarity, trust, and effective decision-making from day one.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help leaders:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Reduce uncertainty and avoid early missteps</li>
-                                <li>Earn trust quickly across teams, peers, and stakeholders</li>
-                                <li>Gain strategic clarity in the first 60–90 days</li>
-                                <li>Adapt to new cultures, expectations, or global contexts</li>
-                                <li>Strengthen presence, influence, and alignment early in the role</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
-                            <p class="text-sm text-charcoal/80">Executives moving into new roles, leading new teams, joining unfamiliar cultures, or stepping into global responsibilities.</p>
-                        </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- 1. Leadership Transition Coaching -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">1. Leadership Transition Coaching</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">For newly promoted executives, leaders entering new organizations, or taking on expanded scope.</p>
+                        <p class="mb-4 text-sm">Transitions create uncertainty — both for the leader and the teams around them. This coaching accelerates clarity, trust, and effective decision-making from day one.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help leaders:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Reduce uncertainty and avoid early missteps</li>
+                            <li>Earn trust quickly across teams, peers, and stakeholders</li>
+                            <li>Gain strategic clarity in the first 60–90 days</li>
+                            <li>Adapt to new cultures, expectations, or global contexts</li>
+                            <li>Strengthen presence, influence, and alignment early in the role</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
+                        <p class="text-sm text-charcoal/80">Executives moving into new roles, leading new teams, joining unfamiliar cultures, or stepping into global responsibilities.</p>
+                    </div>
 
-                        <!-- 2. Senior Leadership Team Development -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">2. Senior Leadership Team Development</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">For leadership teams seeking stronger cohesion, alignment, and trust.</p>
-                            <p class="mb-4 text-sm">When teams don't have shared clarity or trust, collaboration slows and decision-making becomes fragmented. This work helps teams operate as a unified leadership group.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help teams:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Build trust and alignment across diverse personalities and functions</li>
-                                <li>Strengthen communication and reduce friction</li>
-                                <li>Improve cross-team collaboration and problem-solving</li>
-                                <li>Establish shared priorities and a unified operating rhythm</li>
-                                <li>Enable faster decision-making in moments of change</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
-                            <p class="text-sm text-charcoal/80">Senior teams facing cultural shifts, new leadership, restructuring, rapid growth, or cross-functional challenges.</p>
-                        </div>
+                    <!-- 2. Senior Leadership Team Development -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">2. Senior Leadership Team Development</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">For leadership teams seeking stronger cohesion, alignment, and trust.</p>
+                        <p class="mb-4 text-sm">When teams don’t have shared clarity or trust, collaboration slows and decision-making becomes fragmented. This work helps teams operate as a unified leadership group.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help teams:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Build trust and alignment across diverse personalities and functions</li>
+                            <li>Strengthen communication and reduce friction</li>
+                            <li>Improve cross-team collaboration and problem-solving</li>
+                            <li>Establish shared priorities and a unified operating rhythm</li>
+                            <li>Enable faster decision-making in moments of change</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
+                        <p class="text-sm text-charcoal/80">Senior teams facing cultural shifts, new leadership, restructuring, rapid growth, or cross-functional challenges.</p>
+                    </div>
 
-                        <!-- 3. Executive Coaching -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">3. Executive Coaching</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">For leaders who want dedicated support to think clearly, lead effectively, and grow with confidence.</p>
-                            <p class="mb-4 text-sm">Executives choose coaching when they need a trusted partner to help them navigate complexity, sharpen leadership presence, and create sustainable impact.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help leaders:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Gain clarity in complex or high-pressure decisions</li>
-                                <li>Strengthen resilience and emotional agility</li>
-                                <li>Lead with greater authenticity, confidence, and influence</li>
-                                <li>Improve relationships with peers, teams, and stakeholders</li>
-                                <li>Prepare for the next leadership step with purpose and clarity</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Suitable for:</h4>
-                            <p class="text-sm text-charcoal/80">Experienced leaders, emerging executives, founders, or global leaders who want personalized support for growth and decision-making.</p>
-                        </div>
+                    <!-- 3. Executive Coaching -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">3. Executive Coaching</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">For leaders who want dedicated support to think clearly, lead effectively, and grow with confidence.</p>
+                        <p class="mb-4 text-sm">Executives choose coaching when they need a trusted partner to help them navigate complexity, sharpen leadership presence, and create sustainable impact.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help leaders:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Gain clarity in complex or high-pressure decisions</li>
+                            <li>Strengthen resilience and emotional agility</li>
+                            <li>Lead with greater authenticity, confidence, and influence</li>
+                            <li>Improve relationships with peers, teams, and stakeholders</li>
+                            <li>Prepare for the next leadership step with purpose and clarity</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Suitable for:</h4>
+                        <p class="text-sm text-charcoal/80">Experienced leaders, emerging executives, founders, or global leaders who want personalized support for growth and decision-making.</p>
+                    </div>
 
-                        <!-- 4. Organizational Transition Support -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">4. Organizational Transition Support</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">For companies undergoing change, restructuring, or cultural shifts.</p>
-                            <p class="mb-4 text-sm">Organizations experience friction during moments of transition. This advisory support helps CHROs and executives ensure leaders stay aligned, focused, and effective.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">What this includes:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Transition planning and onboarding support for key roles</li>
-                                <li>Stakeholder alignment and team mapping</li>
-                                <li>Culture and trust assessments</li>
-                                <li>Leadership communication support</li>
-                                <li>Clarifying priorities, expectations, and early wins</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
-                            <p class="text-sm text-charcoal/80">Organizations navigating change, mergers, new leadership, restructuring, or global expansion.</p>
-                        </div>
+                    <!-- 4. Organizational Transition Support -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">4. Organizational Transition Support</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">For companies undergoing change, restructuring, or cultural shifts.</p>
+                        <p class="mb-4 text-sm">Organizations experience friction during moments of transition. This advisory support helps CHROs and executives ensure leaders stay aligned, focused, and effective.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">What this includes:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Transition planning and onboarding support for key roles</li>
+                            <li>Stakeholder alignment and team mapping</li>
+                            <li>Culture and trust assessments</li>
+                            <li>Leadership communication support</li>
+                            <li>Clarifying priorities, expectations, and early wins</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
+                        <p class="text-sm text-charcoal/80">Organizations navigating change, mergers, new leadership, restructuring, or global expansion.</p>
+                    </div>
 
-                        <!-- 5. Strategic Boost Workshops -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">5. Strategic Boost Workshops</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">High-impact, single-session workshops to create clarity, momentum, and alignment.</p>
-                            <p class="mb-4 text-sm">Designed for immediate traction, these sessions help teams resolve pressing challenges or accelerate strategic clarity.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">Examples:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Define team culture and shared values</li>
-                                <li>Clarify vision, priorities, and annual plans</li>
-                                <li>Strengthen collaboration and communication norms</li>
-                                <li>Break through creative or strategic blocks</li>
-                                <li>Align on cross-functional priorities</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
-                            <p class="text-sm text-charcoal/80">Teams needing immediate clarity, alignment, or renewed energy during demanding periods.</p>
-                        </div>
-
-                        <!-- Duplicated Set for Seamless Loop -->
-                        <!-- 1. Leadership Transition Coaching -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">1. Leadership Transition Coaching</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">For newly promoted executives, leaders entering new organizations, or taking on expanded scope.</p>
-                            <p class="mb-4 text-sm">Transitions create uncertainty — both for the leader and the teams around them. This coaching accelerates clarity, trust, and effective decision-making from day one.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help leaders:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Reduce uncertainty and avoid early missteps</li>
-                                <li>Earn trust quickly across teams, peers, and stakeholders</li>
-                                <li>Gain strategic clarity in the first 60–90 days</li>
-                                <li>Adapt to new cultures, expectations, or global contexts</li>
-                                <li>Strengthen presence, influence, and alignment early in the role</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
-                            <p class="text-sm text-charcoal/80">Executives moving into new roles, leading new teams, joining unfamiliar cultures, or stepping into global responsibilities.</p>
-                        </div>
-
-                        <!-- 2. Senior Leadership Team Development -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">2. Senior Leadership Team Development</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">For leadership teams seeking stronger cohesion, alignment, and trust.</p>
-                            <p class="mb-4 text-sm">When teams don't have shared clarity or trust, collaboration slows and decision-making becomes fragmented. This work helps teams operate as a unified leadership group.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help teams:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Build trust and alignment across diverse personalities and functions</li>
-                                <li>Strengthen communication and reduce friction</li>
-                                <li>Improve cross-team collaboration and problem-solving</li>
-                                <li>Establish shared priorities and a unified operating rhythm</li>
-                                <li>Enable faster decision-making in moments of change</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
-                            <p class="text-sm text-charcoal/80">Senior teams facing cultural shifts, new leadership, restructuring, rapid growth, or cross-functional challenges.</p>
-                        </div>
-
-                        <!-- 3. Executive Coaching -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">3. Executive Coaching</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">For leaders who want dedicated support to think clearly, lead effectively, and grow with confidence.</p>
-                            <p class="mb-4 text-sm">Executives choose coaching when they need a trusted partner to help them navigate complexity, sharpen leadership presence, and create sustainable impact.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">How I help leaders:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Gain clarity in complex or high-pressure decisions</li>
-                                <li>Strengthen resilience and emotional agility</li>
-                                <li>Lead with greater authenticity, confidence, and influence</li>
-                                <li>Improve relationships with peers, teams, and stakeholders</li>
-                                <li>Prepare for the next leadership step with purpose and clarity</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Suitable for:</h4>
-                            <p class="text-sm text-charcoal/80">Experienced leaders, emerging executives, founders, or global leaders who want personalized support for growth and decision-making.</p>
-                        </div>
-
-                        <!-- 4. Organizational Transition Support -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">4. Organizational Transition Support</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">For companies undergoing change, restructuring, or cultural shifts.</p>
-                            <p class="mb-4 text-sm">Organizations experience friction during moments of transition. This advisory support helps CHROs and executives ensure leaders stay aligned, focused, and effective.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">What this includes:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Transition planning and onboarding support for key roles</li>
-                                <li>Stakeholder alignment and team mapping</li>
-                                <li>Culture and trust assessments</li>
-                                <li>Leadership communication support</li>
-                                <li>Clarifying priorities, expectations, and early wins</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
-                            <p class="text-sm text-charcoal/80">Organizations navigating change, mergers, new leadership, restructuring, or global expansion.</p>
-                        </div>
-
-                        <!-- 5. Strategic Boost Workshops -->
-                        <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8">
-                            <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">5. Strategic Boost Workshops</h3>
-                            <p class="mb-3 text-sm text-charcoal/80">High-impact, single-session workshops to create clarity, momentum, and alignment.</p>
-                            <p class="mb-4 text-sm">Designed for immediate traction, these sessions help teams resolve pressing challenges or accelerate strategic clarity.</p>
-                            <h4 class="font-semibold mb-2 text-sm text-charcoal">Examples:</h4>
-                            <ul class="list-disc list-inside text-sm space-y-1">
-                                <li>Define team culture and shared values</li>
-                                <li>Clarify vision, priorities, and annual plans</li>
-                                <li>Strengthen collaboration and communication norms</li>
-                                <li>Break through creative or strategic blocks</li>
-                                <li>Align on cross-functional priorities</li>
-                            </ul>
-                            <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
-                            <p class="text-sm text-charcoal/80">Teams needing immediate clarity, alignment, or renewed energy during demanding periods.</p>
-                        </div>
+                    <!-- 5. Strategic Boost Workshops -->
+                    <div class="bg-white text-charcoal rounded-xl shadow-md p-8 lg:col-span-2">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-3 source-sans-3-semibold">5. Strategic Boost Workshops</h3>
+                        <p class="mb-3 text-sm text-charcoal/80">High-impact, single-session workshops to create clarity, momentum, and alignment.</p>
+                        <p class="mb-4 text-sm">Designed for immediate traction, these sessions help teams resolve pressing challenges or accelerate strategic clarity.</p>
+                        <h4 class="font-semibold mb-2 text-sm text-charcoal">Examples:</h4>
+                        <ul class="list-disc list-inside text-sm space-y-1">
+                            <li>Define team culture and shared values</li>
+                            <li>Clarify vision, priorities, and annual plans</li>
+                            <li>Strengthen collaboration and communication norms</li>
+                            <li>Break through creative or strategic blocks</li>
+                            <li>Align on cross-functional priorities</li>
+                        </ul>
+                        <h4 class="font-semibold mt-4 mb-2 text-sm text-charcoal">Ideal for:</h4>
+                        <p class="text-sm text-charcoal/80">Teams needing immediate clarity, alignment, or renewed energy during demanding periods.</p>
                     </div>
                 </div>
 
