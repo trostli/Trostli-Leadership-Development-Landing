@@ -392,6 +392,54 @@
         }
         .eyebrow { color: #d2b25c; font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; }
 
+        /* Narrow-screen refinements: keep the first screen calm and the CTAs visible. */
+        @media (max-width: 767px) {
+            .nav-logo {
+                height: 34px;
+                margin: 14px;
+            }
+
+            .hero-animated-bg {
+                padding: 44px 18px calc(32px + env(safe-area-inset-bottom));
+            }
+
+            .hero-animated-bg h1 {
+                font-size: clamp(2.35rem, 10.5vw, 3rem) !important;
+                line-height: 1.08;
+                margin-bottom: 1.25rem !important;
+            }
+
+            .hero-animated-bg .hero-subheadline {
+                font-size: 1rem;
+                line-height: 1.45;
+                margin-bottom: 1.5rem !important;
+            }
+
+            .hero-animated-bg .flex.flex-col {
+                gap: .8rem;
+                margin-bottom: 0 !important;
+            }
+
+            .hero-animated-bg .btn-inverted-primary {
+                width: min(100%, 19rem);
+                padding: 13px 18px;
+            }
+
+            .hero-animated-bg .flex.flex-col > a.text-sm {
+                display: inline-block;
+                padding: 2px 4px;
+            }
+
+            .site-footer {
+                padding-top: 44px !important;
+                padding-bottom: 36px !important;
+            }
+
+            .site-footer .grid {
+                gap: 2rem;
+            }
+        }
+
     </style>
 
     <script>
@@ -887,7 +935,7 @@
         </section>
     </main>
 
-    <footer class="bg-charcoal text-white pt-16 pb-12">
+    <footer class="site-footer bg-charcoal text-white pt-16 pb-12">
             <div class="content-container">
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="md:col-span-1">
