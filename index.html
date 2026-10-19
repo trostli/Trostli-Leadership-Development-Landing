@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leadership transition coaching for executives and organizations navigating critical change, global responsibility, and digital transformation.">
-    <title>Trostli Leadership | Leadership Transition Coaching for Executives</title>
+    <meta name="description" content="Executive coaching, team effectiveness, and organizational leadership support for leaders navigating growth, complexity, and change.">
+    <title>Trostli Leadership | Executive Coaching for Growth and Complexity</title>
+    <link rel="icon" type="image/png" href="images/tld_logo_transparent.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -65,6 +66,33 @@
         p, li, label, input, textarea, details summary, details div { font-size: 16px; line-height: 1.6; } /* Added line-height for readability & FAQ */
         .secondary-text { font-size: 14px; color: #555555; } /* Slightly darker than charcoal for secondary */
         .service-card p, .service-card h4, .service-card li { font-size: 1rem !important; }
+
+        /* Who We Serve: refined white-and-gold card treatment */
+        .who-we-serve-intro { font-weight: 700 !important; }
+        .who-we-serve-card h3 { font-weight: 600 !important; text-align: left; }
+        .gold-underline {
+            text-decoration-line: underline;
+            text-decoration-color: #d2b25c;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+        }
+        .btn-gold-cta {
+            background-color: #d2b25c;
+            color: #10287b;
+            padding: 14px 26px;
+            border-radius: 6px;
+            font-weight: 500;
+            display: inline-block;
+            text-align: center;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+            transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.2s ease, transform 0.2s ease;
+        }
+        .btn-gold-cta:hover {
+            background-color: #e0c77d;
+            color: #0b1b3c;
+            transform: translateY(-1px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+        }
 
         /* Button Styles */
         .btn-primary {
@@ -404,11 +432,16 @@
                 <h1 class="text-5xl md:text-6xl text-white leading-tight mb-6 font-bold" style="font-family: 'Source Sans 3', sans-serif;">Navigate Leadership Transitions with Confidence and Impact</h1>
                 <p class="mb-8 max-w-3xl mx-auto hero-subheadline">Executive coaching grounded in real-world global leadership experience, helping leaders navigate critical transitions, build trust, and create lasting impact.</p>
                 <div class="flex flex-col items-center gap-3 mb-8">
-                    <a href="https://calendly.com/trostlileadership/executive-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary" data-copy-en="Schedule Your Free Consultation →" data-copy-pt="Agende sua consulta gratuita →">Schedule Your Free Consultation →</a>
-                    <a href="#services" class="text-sm text-white underline underline-offset-4">Learn More About Leadership Development</a>
+                    <a href="https://calendly.com/trostlileadership/executive-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary" data-copy-en="Book a Discovery Call →" data-copy-pt="Agende uma conversa inicial →">Book a Discovery Call →</a>
+                    <a href="#services" class="text-sm text-white/70 hover:text-white underline underline-offset-4">Learn More About Leadership Development</a>
                     <p class="text-sm text-white/80" data-copy-en="No cost, no pressure, just a confidential conversation." data-copy-pt="Sem custo e sem pressão, apenas uma conversa confidencial.">No cost, no pressure, just a confidential conversation.</p>
                 </div>
-                <div class="mt-16 w-full overflow-hidden relative mask-gradient">
+            </div>
+        </section>
+
+        <section class="bg-deep-navy section-padding-sm" aria-label="Credibility and experience">
+            <div class="content-container text-center">
+                <div class="w-full overflow-hidden relative mask-gradient">
                     <h3 class="text-sm tracking-widest text-stone-gray uppercase mb-8">Trusted by Leaders from <span class="text-gold font-semibold border-b border-gold pb-0.5">Global Organizations</span></h3>
 
                     <div class="carousel-track">
@@ -436,10 +469,10 @@
             <div class="content-container grid lg:grid-cols-2 gap-16 items-center">
                 <div>
                    <h2 class="text-3xl font-bold text-charcoal mb-6 source-sans-3-semibold" data-copy-en="About Carlos" data-copy-pt="Sobre Carlos">About Carlos</h2>
-                   <p class="mb-4">I coach leaders navigating important transitions, helping them reduce uncertainty, avoid early missteps, and build the trust they need to lead with clarity and confidence.</p>
+                   <p class="mb-4">I help executives navigate transitions, complexity, and change with greater clarity, credibility, and impact, while reducing uncertainty, avoiding early missteps, and building the trust they need to lead with clarity and confidence.</p>
                    <p class="mb-4">Before becoming an executive coach, I spent more than 20 years leading businesses and teams across the Americas and Europe, including senior leadership roles at Procter &amp; Gamble, Unilever, Reckitt, and SC Johnson.</p>
-                   <p class="mb-4">I've experienced firsthand the challenges of stepping into new roles, leading across cultures, aligning teams, and making difficult decisions when expectations are high.</p>
-                   <p>Today, as an ICF ACC, I bring together that global business experience and professional coaching expertise to create a trusted space where leaders can reflect, challenge assumptions, gain perspective, and move forward with confidence.</p>
+                   <p class="mb-4">I have sat in the executive chair, led across cultures, aligned teams, made difficult decisions under pressure, and helped organizations move through transformation. That experience shapes how I coach. I understand the realities behind the leadership challenge, not only the theory.</p>
+                   <p>As an ICF ACC, I combine practical executive experience with a structured coaching approach. I provide a <span class="gold-underline">safe and confidential space</span> where leaders can examine assumptions, strengthen judgment, test new leadership behaviors, and turn insight into focused action.</p>
                 </div>
                 <div>
                     <img src="images/cdt_image.png"
@@ -451,64 +484,83 @@
              </div>
         </section>
 
-        <section id="how-i-work" class="bg-white section-padding">
+        <section id="who-we-serve" class="bg-white section-padding">
+            <div class="content-container text-center max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-charcoal mb-4 source-sans-3-semibold">Who We Serve</h2>
+                <p class="who-we-serve-intro text-charcoal/80 text-lg max-w-3xl mx-auto mb-12">We partner with leaders, teams, and organizations at moments when responsibilities expand, expectations rise, and the path forward is not yet clear.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                    <div class="who-we-serve-card bg-white rounded-2xl p-8 border border-gold shadow-lg h-full">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-4 source-sans-3-semibold text-left">Executives Stepping into Greater Responsibility</h3>
+                        <p class="text-charcoal/80">Newly promoted leaders, executives joining a new organization, and leaders taking on broader roles, teams, or markets.</p>
+                    </div>
+                    <div class="who-we-serve-card bg-white rounded-2xl p-8 border border-gold shadow-lg h-full">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-4 source-sans-3-semibold text-left">Senior Leaders Navigating Complexity</h3>
+                        <p class="text-charcoal/80">Executives facing high-stakes decisions, competing priorities, stakeholder challenges, cultural differences, or organizational change.</p>
+                    </div>
+                    <div class="who-we-serve-card bg-white rounded-2xl p-8 border border-gold shadow-lg h-full">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-4 source-sans-3-semibold text-left">Teams and Organizations Strengthening Leadership</h3>
+                        <p class="text-charcoal/80">Leadership teams, HR partners, and organizational sponsors seeking stronger alignment, early effectiveness, leadership continuity, and sustainable performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-i-work" class="bg-primary-blue section-padding">
             <div class="content-container">
                 <div class="text-center max-w-4xl mx-auto mb-16">
-                    <h2 class="text-3xl font-bold text-charcoal mb-4 source-sans-3-semibold">How I Work</h2>
-                    <p class="text-xl text-charcoal/80 mb-6">My coaching is grounded in trust, clarity, and measurable results.</p>
-                    <p class="text-charcoal">Every coaching engagement begins with understanding your leadership context, the challenges you face, and what meaningful progress would look like. Through confidential conversations, thoughtful questions, and practical reflection, we explore new perspectives and translate insights into actions that strengthen your effectiveness as a leader.</p>
+                    <h2 class="text-3xl font-bold text-white mb-4 source-sans-3-semibold">How I Work</h2>
+                        <p class="text-xl text-white/80 mb-6">My approach combines practical executive experience, challenging questions, and a structured coaching process.</p>
+                    <p class="text-white/80">I provide a <span class="gold-underline">safe and confidential space</span> where you can think clearly, test assumptions, examine difficult choices, and explore possibilities that may be harder to see when the pressure is high. Together, we turn insight into focused action.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <!-- Pillar 1: Strategic Clarity -->
-                <div class="bg-mist-blue p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
-                    <div class="w-16 h-16 rounded-full bg-primary-blue text-white flex items-center justify-center mb-6 mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col">
+                    <div class="w-16 h-16 rounded-full bg-gold text-white flex items-center justify-center mb-6 mx-auto">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-primary-blue mb-4 text-center source-sans-3-semibold">Strategic Clarity</h3>
                         <div class="space-y-4">
-                            <p>I help leaders navigate transitions with focus and confidence. We begin by setting clear goals and measurable outcomes that bring structure, alignment, and accountability to every conversation. Drawing on more than two decades of executive experience, I help you define what matters most, choose the metrics that signal progress, and make decisions that accelerate impact.</p>
-                            <p>Progress is measured not by reports, but by visible, lasting change that people can see and feel.</p>
+                            <p>I help you clarify what matters most, frame difficult choices, and make sound decisions when the pressure is high. We connect your priorities to the realities of your role, your organization, and the people you need to bring with you.</p>
+                            <p>The aim is focused action and visible progress, not activity for its own sake.</p>
                         </div>
                     </div>
 
                 <!-- Pillar 2: Leadership Presence -->
-                <div class="bg-mist-blue p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
-                    <div class="w-16 h-16 rounded-full bg-primary-blue text-white flex items-center justify-center mb-6 mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col">
+                    <div class="w-16 h-16 rounded-full bg-gold text-white flex items-center justify-center mb-6 mx-auto">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8zM19 17v4M17 19h4M5 4v3M3.5 5.5h3"></path>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-primary-blue mb-4 text-center source-sans-3-semibold">Leadership Presence</h3>
                         <div class="space-y-4">
-                            <p>Leadership begins with self-awareness and honest expression. Through focused dialogue and reflection, I help you tap into your natural style, align it with your values, and communicate with clarity and confidence—even under pressure.</p>
-                            <p>We look closely at how your presence shapes trust, engagement, and results. The aim is not to perform leadership, but to embody it consistently and credibly.</p>
-                            <p>The result is deeper self-trust, greater influence, and a presence that inspires confidence in others.</p>
+                            <p>Through focused dialogue and reflection, I help you understand how your leadership is experienced by others and adapt your approach without losing your authenticity.</p>
+                            <p>We examine how you communicate, make decisions, and show up under pressure. The aim is greater credibility, influence, and confidence in the moments that matter.</p>
                         </div>
                     </div>
 
                 <!-- Pillar 3: Trusted Relationships -->
-                <div class="bg-mist-blue p-8 rounded-xl shadow-sm border border-gray-200 flex flex-col">
-                    <div class="w-16 h-16 rounded-full bg-primary-blue text-white flex items-center justify-center mb-6 mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col">
+                    <div class="w-16 h-16 rounded-full bg-gold text-white flex items-center justify-center mb-6 mx-auto">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-semibold text-primary-blue mb-4 text-center source-sans-3-semibold">Trusted Relationships</h3>
                         <div class="space-y-4">
-                            <p>No leader succeeds alone. Sustainable change depends on relationships built on trust and mutual understanding.</p>
-                            <p>Here we focus on how you engage stakeholders—direct reports, peers, and senior executives. Through real-world dialogue, I help you listen more deeply, align more effectively, and lead collaboratively, especially in diverse or high-stakes settings.</p>
-                            <p>By cultivating trust and connection, you create the conditions for alignment, innovation, and long-term success.</p>
+                            <p>Leadership depends on the quality of the relationships around you. I help you read stakeholder dynamics, build trust, and address difficult conversations with greater clarity.</p>
+                            <p>Together, we strengthen the relationships that support alignment, collaboration, and sustained progress, especially in diverse or high-stakes settings.</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- CTA -->
                 <div class="text-center">
-                    <a href="https://calendly.com/trostlileadership/executive-consultation" target="_blank" rel="noopener noreferrer" class="btn-gold-outline text-lg">Explore how we can work together &rarr;</a>
-                    <p class="mt-3 text-base text-charcoal/70">Created specifically for leaders and teams navigating transition.</p>
+                    <a href="https://calendly.com/trostlileadership/executive-consultation" target="_blank" rel="noopener noreferrer" class="btn-gold-outline text-lg">Explore How We Can Work Together &rarr;</a>
+                    <p class="mt-3 text-base text-white/80">Created specifically for leaders and teams navigating transition.</p>
                 </div>
             </div>
         </section>
@@ -519,10 +571,10 @@
                     <p class="eyebrow mb-4">For Organizations</p>
                     <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Help Leaders Succeed When It Matters Most</h2>
                     <p class="text-white/80 mb-6">Leadership transitions carry significant expectations for both the executive and the organization. When alignment is slow, priorities remain unclear, or stakeholder relationships are strained, the consequences can extend well beyond the individual leader.</p>
-                    <p class="text-white/80 mb-6">Trostli Leadership works with organizations to support executives in critical roles, strengthen senior team effectiveness, and create the conditions for sustainable performance.</p>
+                    <p class="text-white/80 mb-6">I work with organizations to align leadership, culture, and strategy during periods of growth, transition, and transformation.</p>
                     <p class="text-white/80 mb-3">Through tailored coaching and leadership development, we help organizations:</p>
                     <ul class="list-disc list-inside text-white/80 space-y-2 mb-6">
-                        <li>Accelerate executive integration and early effectiveness.</li>
+                        <li>Support leadership transitions, onboarding, and early effectiveness.</li>
                         <li>Strengthen trust and alignment among key stakeholders.</li>
                         <li>Reduce avoidable friction during leadership transitions.</li>
                         <li>Support leadership continuity and the development of critical talent.</li>
@@ -535,6 +587,45 @@
         </section>
 
         <section id="services" class="bg-primary-blue section-padding">
+            <div class="content-container text-white">
+                <div class="max-w-4xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white tracking-tight source-sans-3-semibold">How We Can Work Together</h2>
+                    <p class="text-lg text-white/80">Practical, human-centered support for executives, teams, and organizations navigating growth, complexity, and change.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8 text-base flex flex-col">
+                        <p class="eyebrow text-gold mb-3 text-center">Signature focus</p>
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-4 source-sans-3-semibold">Executive Coaching for Growth and Complexity</h3>
+                        <h4 class="font-semibold mb-3 text-charcoal">Leadership Transition &amp; Executive Onboarding</h4>
+                        <p class="mb-4">I work one-to-one with executives and high-potential leaders who are taking on greater responsibility, entering new environments, or facing complex leadership challenges.</p>
+                        <p class="mb-4">Together, we work on the decisions, relationships, and leadership behaviors that shape your impact.</p>
+                        <p class="text-charcoal/80">For leaders navigating transitions, expanded scope, stakeholder complexity, and change.</p>
+                    </div>
+
+                    <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8 text-base flex flex-col">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-4 source-sans-3-semibold">Team Coaching &amp; Effectiveness</h3>
+                        <p class="mb-4">I help leadership teams understand how they work together, recognize patterns that support or limit progress, and create clearer agreements for communication, trust, and accountability.</p>
+                        <p class="mb-4">The aim is stronger trust, more productive challenge, better decisions, and greater alignment around shared priorities.</p>
+                        <p class="text-charcoal/80">For leadership teams navigating growth, integration, conflict, uncertainty, or organizational change.</p>
+                    </div>
+
+                    <div class="service-card bg-white text-charcoal rounded-xl shadow-md p-8 text-base flex flex-col">
+                        <h3 class="text-2xl font-semibold text-primary-blue mb-4 source-sans-3-semibold">Organizational Leadership Support</h3>
+                        <p class="mb-4">I support organizations as they align leadership, culture, and strategy during periods of growth, transition, or transformation.</p>
+                        <p class="mb-4">Through facilitated conversations and practical reflection, leaders and teams can clarify priorities, address difficult issues, and build more consistent, capable, and human ways of working.</p>
+                        <p class="text-charcoal/80">For organizations working through leadership change, cultural shifts, strategic realignment, or responsible digital transformation.</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12 flex flex-col items-center gap-4">
+                    <a href="https://calendly.com/trostlileadership/executive-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary text-lg">Book a Discovery Call &rarr;</a>
+                    <a href="contact.html" class="btn-gold-cta text-lg">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services-legacy" class="hidden" aria-hidden="true">
             <div class="content-container text-white">
                 <div class="max-w-4xl mx-auto text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white tracking-tight source-sans-3-semibold" data-copy-en="Leadership development services" data-copy-pt="Serviços de desenvolvimento de liderança">Leadership development services</h2>
@@ -638,7 +729,7 @@
             </div>
         </section>
 
-        <section id="who-we-work-with" class="bg-white section-padding">
+        <section id="who-we-work-with-legacy" class="hidden" aria-hidden="true">
             <div class="content-container text-center max-w-6xl mx-auto">
                 <h2 class="text-3xl font-bold text-charcoal mb-4 text-center source-sans-3-semibold">Who We Work With</h2>
                 <p class="text-charcoal/80 max-w-3xl mx-auto mb-10">We partner with accomplished leaders and teams at pivotal moments—when clarity, alignment, and decisive action matter most.</p>
@@ -710,7 +801,7 @@
 
                     <div class="mt-10 text-center">
                         <a href="https://calendly.com/trostlileadership/executive-consultation" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center text-lg">
-                            Schedule Your Free Consultation &rarr;
+                            Book a Discovery Call &rarr;
                         </a>
                         <p class="mt-3 text-sm text-charcoal/80">A brief, confidential conversation to explore your leadership challenges and whether working together could be valuable.</p>
                     </div>
@@ -718,7 +809,7 @@
             </div>
         </section>
 
-        <section id="testimonials" class="bg-white section-padding">
+        <section id="testimonials" class="hidden" aria-hidden="true">
             <div class="content-container">
                 <h2 class="text-3xl font-bold text-charcoal mb-4 text-center source-sans-3-semibold">Real Perspectives. Meaningful Leadership Growth.</h2>
                 <p class="text-center max-w-3xl mx-auto mb-4">Carlos Trostli has coached senior executives across diverse industries. Their words reflect the trust we built and the impact of our work together.</p>
@@ -784,11 +875,12 @@
 
         <section id="contact" class="bg-primary-blue section-padding">
             <div class="content-container text-center">
-                <h2 class="text-5xl md:text-6xl text-white font-bold leading-tight max-w-4xl mx-auto mb-8 source-sans-3-semibold" data-copy-en="Ready to turn a critical transition into an opportunity?" data-copy-pt="Pronto para transformar uma transição crítica em oportunidade?">Ready to turn a critical transition into an opportunity?</h2>
+                <h2 class="text-3xl md:text-4xl text-white font-bold leading-tight max-w-4xl mx-auto mb-8 source-sans-3-semibold" data-copy-en="Ready to turn a critical transition into an opportunity?" data-copy-pt="Pronto para transformar uma transição crítica em oportunidade?">Ready to turn a critical transition into an opportunity?</h2>
                 <div class="flex flex-col items-center mb-12 gap-3">
                     <a href="https://calendly.com/trostlileadership/executive-consultation" target="_blank" rel="noopener noreferrer" class="btn-inverted-primary inline-flex items-center text-lg">
-                        Schedule Your Free Consultation &rarr;
+                        Book a Discovery Call &rarr;
                     </a>
+                    <a href="contact.html" class="btn-gold-cta text-lg">Get in Touch</a>
                     <p class="text-base md:text-lg text-white/80 max-w-2xl mx-auto">No cost, no pressure, just a conversation about your next chapter.</p>
                 </div>
             </div>
@@ -806,8 +898,9 @@
                 <div class="md:col-span-1">
                     <h4 class="text-lg font-semibold mb-4 tracking-wide">Contact</h4>
                     <div class="space-y-3 text-gray-300">
-                        <p><a href="tel:+16178602020" class="hover:text-white transition-colors">Tel: +1 (617) 860-2020</a></p>
+                        <p><a href="tel:+16178009181" class="hover:text-white transition-colors">Tel: +1 (617) 800-9181</a></p>
                         <p><a href="mailto:trostli@trostlileadership.com" class="hover:text-white transition-colors">Email: trostli@trostlileadership.com</a></p>
+                        <p><a href="contact.html" class="hover:text-white transition-colors">Get in Touch</a></p>
                         <div class="flex items-center space-x-4 pt-2">
                              <a href="https://wa.me/12016966020" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 12c0 1.75.45 3.49 1.32 5l-1.46 5.35 5.48-1.44c1.47.81 3.11 1.24 4.84 1.24h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zM12.04 20.15h-.01c-1.5 0-2.98-.4-4.32-1.15l-.31-.18-3.21.84.86-3.14-.2-.33c-.8-1.37-1.22-2.94-1.22-4.59 0-4.42 3.59-8.01 8.01-8.01s8.01 3.59 8.01 8.01-3.59 8.01-8.01 8.01zm4.43-5.21c-.24-.12-1.44-.71-1.66-.79-.23-.08-.39-.12-.56.12-.17.24-.63.79-.77.95-.14.17-.29.19-.53.07s-1.03-.38-1.96-1.21c-.72-.65-1.21-1.45-1.35-1.7-.14-.24-.02-.37.1-.49.11-.11.24-.29.37-.43s.17-.24.25-.4c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31s-.86.84-.86 2.06c0 1.22.88 2.39 1 2.56.12.17 1.74 2.65 4.22 3.72.59.25 1.05.41 1.41.52.6.19 1.14.16 1.56.1.48-.07 1.44-.59 1.64-1.16.2-.56.2-1.04.14-1.16-.06-.11-.23-.18-.48-.3z"></path></svg>

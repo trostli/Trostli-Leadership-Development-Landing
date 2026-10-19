@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Trostli Leadership about executive coaching, team effectiveness, and organizational leadership support.">
+    <title>Get in Touch | Trostli Leadership</title>
+    <link rel="icon" type="image/png" href="images/tld_logo_transparent.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-navy': '#0b1b3c',
+                        'primary-blue': '#10287b',
+                        'gold': '#d2b25c',
+                        'stone-gray': '#e0dcd9',
+                        'mist-blue': '#c0cde3',
+                        'charcoal': '#333333'
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        body { font-family: "Roboto", sans-serif; color: #333333; }
+        h1, h2, h3 { font-family: "Source Sans 3", sans-serif; }
+        label { font-weight: 500; }
+        input, textarea, select {
+            border: 1px solid #c0cde3;
+            border-radius: 8px;
+            padding: 12px 14px;
+            width: 100%;
+            font-size: 16px;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #10287b;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(16, 40, 123, 0.2);
+        }
+        .btn-primary {
+            background: #10287b;
+            color: white;
+            padding: 14px 26px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        .btn-primary:hover { background: #0b1b3c; }
+    </style>
+</head>
+<body class="bg-stone-gray">
+    <header class="bg-deep-navy">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="index.html" aria-label="Return to Trostli Leadership home">
+                <img src="images/tld_logo_transparent.png" alt="Trostli Leadership Logo" class="h-10">
+            </a>
+            <a href="index.html" class="text-white underline underline-offset-4">Back to Home</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-primary-blue text-white px-6 py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="uppercase tracking-widest text-sm text-gold font-semibold mb-4">Get in Touch</p>
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Start with a conversation about what matters most.</h1>
+                <p class="text-lg md:text-xl text-white/85 max-w-3xl mx-auto">Share a little about your current leadership challenge, and I will respond with a thoughtful next step.</p>
+            </div>
+        </section>
+
+        <section class="px-6 py-16 md:py-24">
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-8 md:p-12">
+                <div>
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSfGk9v7VcVJ6HzXlvkpLftBoFVPKVTgQILHHz_uuAoVVoIFtA/viewform?embedded=true"
+                        title="Trostli Leadership Get in Touch form"
+                        class="w-full min-h-[980px] border-0"
+                        loading="lazy">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfGk9v7VcVJ6HzXlvkpLftBoFVPKVTgQILHHz_uuAoVVoIFtA/viewform" target="_blank" rel="noopener noreferrer">Open the Get in Touch form</a>
+                    </iframe>
+                    <p class="mt-4 text-sm text-charcoal/70">Your information will be submitted through Google Forms and used to respond to your inquiry. For a direct conversation, you can also book a free consultation through Calendly.</p>
+                    <div class="mt-6 flex justify-center">
+                        <a href="https://calendly.com/trostlileadership/executive-consultation" target="_blank" rel="noopener noreferrer" class="text-primary-blue underline underline-offset-4">Book a Discovery Call</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-charcoal text-white px-6 py-10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <p class="text-sm text-gray-300">&copy; <span id="current-year"></span> Trostli Leadership. All Rights Reserved.</p>
+            <a href="mailto:trostli@trostlileadership.com" class="text-sm text-gray-300 hover:text-white">trostli@trostlileadership.com</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
