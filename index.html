@@ -351,6 +351,13 @@
             100% { transform: translateX(-50%); } /* Move halfway if content is duplicated */
         }
 
+        /* Respect reduced-motion preferences: stop the logo carousel. */
+        @media (prefers-reduced-motion: reduce) {
+            .carousel-track {
+                animation: none;
+            }
+        }
+
         /* Filter for logos on dark background */
         .logo-carousel-item {
             height: 35px;
@@ -505,7 +512,7 @@
         <section class="bg-deep-navy section-padding-sm" aria-label="Credibility and experience">
             <div class="content-container text-center">
                 <div class="w-full overflow-hidden relative mask-gradient">
-                    <h3 class="text-sm tracking-widest text-stone-gray uppercase mb-8">Trusted by Leaders from <span class="text-gold font-semibold border-b border-gold pb-0.5">Global Organizations</span></h3>
+                    <p class="text-sm tracking-widest text-stone-gray uppercase mb-8">Trusted by Leaders from <span class="text-gold font-semibold border-b border-gold pb-0.5">Global Organizations</span></p>
 
                     <div class="carousel-track">
                         <!-- First Set of Logos -->
@@ -517,12 +524,12 @@
                         <img src="images/monochrome_logos/7_Crocks_monochrome.png" alt="Crocs Logo" class="logo-carousel-item">
 
                         <!-- Duplicated Set for Seamless Loop -->
-                        <img src="images/monochrome_logos/1_PG_monochrome.png" alt="Procter & Gamble Logo" class="logo-carousel-item">
-                        <img src="images/monochrome_logos/2_Unilever_monochrome.png" alt="Unilever Logo" class="logo-carousel-item">
-                        <img src="images/monochrome_logos/3_Reckit_monochrome.png" alt="Reckitt Logo" class="logo-carousel-item">
-                        <img src="images/monochrome_logos/4_Pepsico_monochrome.png" alt="Pepsico Logo" class="logo-carousel-item">
-                        <img src="images/monochrome_logos/5_SCJohnson_monochrome.png" alt="SC Johnson Logo" class="logo-carousel-item">
-                        <img src="images/monochrome_logos/7_Crocks_monochrome.png" alt="Crocs Logo" class="logo-carousel-item">
+                        <img src="images/monochrome_logos/1_PG_monochrome.png" alt="" aria-hidden="true" class="logo-carousel-item">
+                        <img src="images/monochrome_logos/2_Unilever_monochrome.png" alt="" aria-hidden="true" class="logo-carousel-item">
+                        <img src="images/monochrome_logos/3_Reckit_monochrome.png" alt="" aria-hidden="true" class="logo-carousel-item">
+                        <img src="images/monochrome_logos/4_Pepsico_monochrome.png" alt="" aria-hidden="true" class="logo-carousel-item">
+                        <img src="images/monochrome_logos/5_SCJohnson_monochrome.png" alt="" aria-hidden="true" class="logo-carousel-item">
+                        <img src="images/monochrome_logos/7_Crocks_monochrome.png" alt="" aria-hidden="true" class="logo-carousel-item">
                     </div>
                 </div>
             </div>
@@ -965,10 +972,10 @@
                         <p><a href="mailto:trostli@trostlileadership.com" class="hover:text-white transition-colors">Email: trostli@trostlileadership.com</a></p>
                         <p><a href="contact.html" class="hover:text-white transition-colors">Get in Touch</a></p>
                         <div class="flex items-center space-x-4 pt-2">
-                             <a href="https://wa.me/12016966020" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
+                             <a href="https://wa.me/12016966020" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 12c0 1.75.45 3.49 1.32 5l-1.46 5.35 5.48-1.44c1.47.81 3.11 1.24 4.84 1.24h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zM12.04 20.15h-.01c-1.5 0-2.98-.4-4.32-1.15l-.31-.18-3.21.84.86-3.14-.2-.33c-.8-1.37-1.22-2.94-1.22-4.59 0-4.42 3.59-8.01 8.01-8.01s8.01 3.59 8.01 8.01-3.59 8.01-8.01 8.01zm4.43-5.21c-.24-.12-1.44-.71-1.66-.79-.23-.08-.39-.12-.56.12-.17.24-.63.79-.77.95-.14.17-.29.19-.53.07s-1.03-.38-1.96-1.21c-.72-.65-1.21-1.45-1.35-1.7-.14-.24-.02-.37.1-.49.11-.11.24-.29.37-.43s.17-.24.25-.4c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31s-.86.84-.86 2.06c0 1.22.88 2.39 1 2.56.12.17 1.74 2.65 4.22 3.72.59.25 1.05.41 1.41.52.6.19 1.14.16 1.56.1.48-.07 1.44-.59 1.64-1.16.2-.56.2-1.04.14-1.16-.06-.11-.23-.18-.48-.3z"></path></svg>
                             </a>
-                            <a href="https://www.linkedin.com/in/ctrostli/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
+                            <a href="https://www.linkedin.com/in/ctrostli/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition-colors">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg>
                             </a>
                         </div>
