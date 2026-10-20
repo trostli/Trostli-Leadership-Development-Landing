@@ -20,7 +20,7 @@ branch `archive-old-website-2026-10-19`.
 - Repository: https://github.com/trostli/Trostli-Leadership-Development-Landing
 - Local repository: `/Users/trostli/Documents/GitHub/Trostli-Leadership-Development-Landing`
 - Production branch: `main`
-- Current production commit: `70a7896`
+- Current production commit: `489965e`
 - Revision branch: `feature/tld-revision`
 - Archive branch: `archive-old-website-2026-10-19`
 
@@ -51,6 +51,12 @@ details without the original reference.
   CTA visibility. The relevant commit is `afe7efb`.
 - PR #3 implemented the compact mobile header and scroll offset. The relevant commit is
   `1abf8ff`; the merge commit is `70a7896`.
+- PR #4 refreshed this handoff file. The content commit is `cf99728`; the merge commit is
+  `8fb2274`.
+- PR #5 completed the approved accessibility fixes: accessible names for the WhatsApp and
+  LinkedIn icon links, decorative duplicate carousel logos, reduced-motion support, and the
+  corrected credibility-section heading level. The content commit is `9e722e6`; the merge
+  commit is `489965e`. The six organization logos remain unchanged by approval.
 - The live homepage, contact page, Google Form embed, Calendly links, phone, email,
   LinkedIn, and WhatsApp links were smoke-tested.
 
